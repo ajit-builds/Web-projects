@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz on AI and machine learning">
+    <meta name="keywords" content="HTML,CSS,Quiz, Web Developer, Ajit Singh,coding ,machine learning ,AI,JAva, python">
+    <meta name="author" content="Ajit Singh">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Fun Quiz: Test Your General Knowledge!">
+    <meta property="og:description"
+        content="A short general knowledge quiz with 5 exciting questions to challenge your brain!">
+    <meta property="og:image" content="https://i.postimg.cc/quiz-banner.png">
+
+    <title>Quiz on AI & ML</title>
+
+    <!-- CSS -->
+    <style>
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            /* header text left, nav right */
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            /* spacing between links */
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f0f4f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            color: #4CAF50;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>A short AI and ML quiz with 5 exciting questions to challenge your brain!</h1>
+            <nav>
+
+                <a href="#Instructions">Instructions</a>
+                <a href="#Quiz">Quiz</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+        </div>
+        <h2>5 Questions on AI and ML</h2>
+    </header>
+
+    <section id="Instructions">
+        <h3><strong>Important:</strong> Instructions <em>read it carefully</em></h3>
+        <ol>
+            <li>Read every question carefully</li>
+            <li>Once you submit the quiz, you cannot change your answers</li>
+            <li>You can select only 1 option per question</li>
+            <li>Don't use any other tab</li>
+        </ol>
+    </section>
+
+    <section id="Quiz">
+        <h3>Quiz section</h3>
+        <form action="thankyou.html" method="get">
+
+            <p>1. Which of the following is an example of supervised learning?</p>
+            <input type="radio" name="q1" value="a"> A)K-Means Clustering<br>
+            <input type="radio" name="q1" value="b"> B)Linear Regression<br>
+            <input type="radio" name="q1" value="c"> C)Principal Component Analysis (PCA)<br>
+            <input type="radio" name="q1" value="d"> D)Q-Learning<br> <br>
+            <p>2. What does “overfitting” in machine learning mean?</p>
+            <input type="radio" name="q2" value="a"> A)Model performs well on new data but poorly on training data<br>
+            <input type="radio" name="q2" value="b">B)Model performs well on training data but poorly on new/unseen
+            data<br>
+            <input type="radio" name="q2" value="c"> C)Principal Component Analysis (PCA)<br>
+            <input type="radio" name="q2" value="d"> D)Model improves with more data<br>
+            <p>3. Which AI technique is mainly used for tasks like speech recognition and image classification?</p>
+            <input type="radio" name="q3" value="a"> A) Rule-based systems<br>
+            <input type="radio" name="q3" value="b"> B) Neural Networks<br>
+            <input type="radio" name="q3" value="c"> C) Decision Trees<br>
+            <input type="radio" name="q3" value="d"> D) Genetic Algorithms<br><br>
+            <p>4. In unsupervised learning, which of the following is a common task?</p>
+            <input type="radio" name="q4" value="a"> A) Classification<br>
+            <input type="radio" name="q4" value="b"> B) Regression<br>
+            <input type="radio" name="q4" value="c"> C) Clustering<br>
+            <input type="radio" name="q4" value="d"> D) Prediction<br><br>
+            <p>5. Which of these is an example of reinforcement learning?</p>
+            <input type="radio" name="q5" value="a"> A) Predicting house prices using past data<br>
+            <input type="radio" name="q5" value="b"> B) Self-driving cars learning to navigate through trial and
+            error<br>
+            <input type="radio" name="q5" value="c"> C) Grouping customers based on purchasing behavior<br>
+            <input type="radio" name="q5" value="d"> D) Sentiment analysis on product reviews<br><br> <br>
+            <input type="button" value="Submit">
+
+        </form>
+
+        <footer id="Contact">
+            <hr>
+            <p>Contact: ajit@example.com | Follow me on social media!</p>
+            <p>&copy; 2025 Ajit Singh</p>
+            <a href="https://www.linkedin.com/in/ajit-singh-a47a47371/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/ajit-builds" target="_blank">GitHub</a>
+        </footer>
+
+        <!-- JavaScript -->
+        <script>
+            function calculateScore() {
+                const answers = {
+                    q1: "b",
+                    q2: "b",
+                    q3: "b",
+                    q4: "c",
+                    q5: "b"
+                };
+
+                let score = 0;
+
+                for (let q in answers) {
+                    const selected = document.querySelector(`input[name="${q}"]:checked`);
+                    if (selected && selected.value === answers[q]) {
+                        score++;
+                    }
+                }
+
+                document.getElementById("result").innerText = `You scored ${score} out of 5!`;
+            }
+        </script>
+</body>
+
+</html>
